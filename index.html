@@ -51,6 +51,45 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		
+		  <tr onmouseout="nerfie_stop()" onmouseover="nerfie_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nerfie_image'><video  width=160 muted autoplay loop>
+                <source src="data/avo-dynamic.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='data/avo_still.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerfie_start() {
+                  document.getElementById('nerfie_image').style.opacity = "1";
+                }
+
+                function nerfie_stop() {
+                  document.getElementById('nerfie_image').style.opacity = "0";
+                }
+                nerfie_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://nerfies.github.io/">
+                <papertitle>Exploring Self-Attention for Visual Odometry</papertitle>
+              </a>
+              <br>
+              
+              <strong>Hamed Damirchi</strong>,
+              <a href="http://notjustatheory.github.io/">Rooholla Khorrambakht</a>,
+              <a href="https://aras.kntu.ac.ir/taghirad/">Hamid D. Taghirad</a>
+              <br>
+              <em>arXiv</em>, 2020  
+              <br>
+              <a href="https://arxiv.org/pdf/2011.08634v1.pdf">arXiv</a>
+              <p></p>
+              <p>By using a single-head spatial self-attention mechanism, we show that common CNN-LSTM architectures fail to extract adequate motion features in the presense of artifacts in the input. Without augmentations, the network is able to reject dynamic objects and focus on the background of the scene for better odometry.
+              </p>
+            </td>
+          </tr> 
 
           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
