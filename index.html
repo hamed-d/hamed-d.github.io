@@ -66,14 +66,58 @@
               <a href="https://aras.kntu.ac.ir/taghirad/">Hamid D. Taghirad</a>,
 			  <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/bmoshiri">Behzad Moshiri</a>
               <br>
-              arXiv, 2021</a> 
+              ICRA, 2023</a> 
               <br>
               <a href="https://arxiv.org/abs/2107.00366">arXiv</a>
               <p></p>
               <p>We introduce a consistency-based loss function for deep odometry by compounding the estimated SE(3) pose and uncertainties. The compounded terms are then used in a negative log-likelihood objective function where the precision matrices weighting the global loss term are based on the integrated uncertainty.</p>
             </td>
           </tr> 
+		  
+		  <tr onmouseout="nerfw_stop()" onmouseover="nerfw_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src='images/preintegration.png' width="160">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2007.02929.pdf">
+                <papertitle>Preintegrated IMU Features For Efficient Deep Inertial Odometry</papertitle>
+              </a>
+              <br>
+              <a href="http://notjustatheory.github.io/">Rooholla Khorrambakht</a>,
+              <strong>Hamed Damirchi</strong>,
+              <a href="https://aras.kntu.ac.ir/taghirad/">Hamid D. Taghirad</a>
+              <br>
+              <em>TinyML</em>, 2022  
+              <br>
+			  <a href="https://cms.tinyml.org/wp-content/uploads/talks2022/2007.02929.pdf">TinyML</a>
+              <a href="https://arxiv.org/pdf/2007.02929.pdf">arXiv</a>
+              <p></p>
+              <p>A computationally efficient inertial representation for deep inertial odometry is proposed by replacing the raw IMU data in deep Inertial models with preintegrated features to improve the model’s efficiency.</p>
+            </td>
+          </tr> 
 		
+          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src='images/capsnet.png' width="160">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+			  <br>
+              <a href="https://arxiv.org/abs/2007.03063">
+                <papertitle>ARC-Net: Activity Recognition Through Capsules</papertitle>
+              </a>
+			  <br>
+              <strong>Hamed Damirchi</strong>,
+              <a href="http://notjustatheory.github.io/">Rooholla Khorrambakht</a>,
+              <a href="https://aras.kntu.ac.ir/taghirad/">Hamid D. Taghirad</a>
+              <br>
+              <a href="https://www.icmla-conference.org/icmla20/index.html"><em>ICMLA</em>, 2020</a> 
+              <br>
+              <a href="https://arxiv.org/abs/2007.03063">arXiv</a>
+              <p></p>
+              <p>A single CNN encoder is used to extract the features from multiple IMU sensors. These features are used as entities that represent patterns in the input and through dynamic routing, activity of the subject is derived in that window of inputs. By using this architecture, various benefits such as interpretability and robustnetss to noise are gained.</p>
+            </td>
+          </tr> 
+		  
 		  <tr onmouseout="nerfie_stop()" onmouseover="nerfie_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -110,49 +154,6 @@
               <p></p>
               <p>We show that common CNN-LSTM architectures fail to extract adequate motion features in the presense of artifacts in the input. Then, by using a single-head spatial self-attention mechanism and without augmentations, we show that the network is able to reject dynamic objects and focus on the background of the scene for better odometry.
               </p>
-            </td>
-          </tr> 
-
-          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='images/capsnet.png' width="160">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-			  <br>
-              <a href="https://arxiv.org/abs/2007.03063">
-                <papertitle>ARC-Net: Activity Recognition Through Capsules</papertitle>
-              </a>
-			  <br>
-              <strong>Hamed Damirchi</strong>,
-              <a href="http://notjustatheory.github.io/">Rooholla Khorrambakht</a>,
-              <a href="https://aras.kntu.ac.ir/taghirad/">Hamid D. Taghirad</a>
-              <br>
-              <a href="https://www.icmla-conference.org/icmla20/index.html"><em>ICMLA</em>, 2020</a> 
-              <br>
-              <a href="https://arxiv.org/abs/2007.03063">arXiv</a>
-              <p></p>
-              <p>A single CNN encoder is used to extract the features from multiple IMU sensors. These features are used as entities that represent patterns in the input and through dynamic routing, activity of the subject is derived in that window of inputs. By using this architecture, various benefits such as interpretability and robustnetss to noise are gained.</p>
-            </td>
-          </tr> 
-
-          <tr onmouseout="nerfw_stop()" onmouseover="nerfw_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='images/preintegration.png' width="160">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2007.02929.pdf">
-                <papertitle>Preintegrated IMU Features For Efficient Deep Inertial Odometry</papertitle>
-              </a>
-              <br>
-              <a href="http://notjustatheory.github.io/">Rooholla Khorrambakht</a>,
-              <strong>Hamed Damirchi</strong>,
-              <a href="https://aras.kntu.ac.ir/taghirad/">Hamid D. Taghirad</a>
-              <br>
-              <em>arXiv</em>, 2020  
-              <br>
-              <a href="https://arxiv.org/pdf/2007.02929.pdf">arXiv</a>
-              <p></p>
-              <p>A computationally efficient inertial representation for deep inertial odometry is proposed by replacing the raw IMU data in deep Inertial models with preintegrated features to improve the model’s efficiency.</p>
             </td>
           </tr> 
 
