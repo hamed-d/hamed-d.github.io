@@ -1,0 +1,38 @@
+# Badge colours for the abbr field in _bibliography/papers.bib
+"ACL":
+  url: https://2026.aclweb.org/
+  color: "#b31b1b"
+
+"ICLR":
+  url: https://iclr.cc/
+  color: "#1f5aa6"
+
+"ICRA":
+  color: "#00629b"
+
+"IROS":
+  color: "#00629b"
+
+"CVIU":
+  color: "#e9711c"
+
+"MSD":
+  color: "#6a5acd"
+
+"ICMLA":
+  color: "#2e8b57"
+
+"ICRoM":
+  color: "#2e8b57"
+
+"ICEE":
+  color: "#2e8b57"
+
+"tinyML":
+  color: "#555555"
+
+"Workshop":
+  color: "#555555"
+
+"arXiv":
+  color: "#7a7a7a"
