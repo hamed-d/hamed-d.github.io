@@ -25,7 +25,7 @@ My work is on large language models, both making them more useful in application
 
 My earlier work was in robotics, on localisation and sensor fusion. I have also built applied AI systems with engineers and domain experts, in energy forecasting, healthcare and AI policy.
 
-I am completing my PhD at the Australian Institute for Machine Learning, advised by [Javen Shi](https://javenshi.org/), [Yuhang Liu](https://sites.google.com/view/yuhangliu/homepage) and [Zhen Zhang](https://au.linkedin.com/in/zhen-zhang-28756861), and I teach large language model development to Master's students.
+I am completing my PhD at the Australian Institute for Machine Learning, advised by [Javen Shi](https://javenshi.org/), [Yuhang Liu](https://sites.google.com/view/yuhangliu/homepage) and [Zhen Zhang](https://au.linkedin.com/in/zhen-zhang-28756861), and supported by the Centre for Augmented Reasoning (CAR) and the Responsible AI Research (RAIR) Centre.
 
 ### What I work on
 
