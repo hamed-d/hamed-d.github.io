@@ -21,7 +21,11 @@ latest_posts:
   enabled: false # the blog is not featured on the home page
 ---
 
-I'm a PhD researcher at the Australian Institute for Machine Learning, Adelaide University. My research makes large language models more reliable and cheaper to adapt: detecting reasoning errors from a model's internal representations, fine-tuning with far fewer trainable parameters, and editing model behaviour more precisely. I've also built applied systems for electricity-demand forecasting, multi-agent LLM simulation for AI policy, and medical image analysis, and I teach LLM development to Master's students.
+My work is on large language models, both making them more useful in applications and interpreting them, so that we know when they are working, how they arrive at their outputs and where those outputs come from. The concern throughout is performance, reliability and safety.
+
+My earlier work was in robotics, on localisation and sensor fusion. I have also built applied AI systems with engineers and domain experts, in energy forecasting, healthcare and AI policy.
+
+I am completing my PhD at the Australian Institute for Machine Learning, advised by [Javen Shi](https://javenshi.org/), [Yuhang Liu](https://sites.google.com/view/yuhangliu/homepage) and [Zhen Zhang](https://au.linkedin.com/in/zhen-zhang-28756861), and I teach large language model development to Master's students.
 
 ### What I work on
 

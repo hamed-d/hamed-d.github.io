@@ -10,7 +10,6 @@ Personal website of Hamed Damirchi, built with [al-folio](https://github.com/als
 | Projects | `_projects/*.md` (`importance` sets the order, `category` sets the group) |
 | Publications | `_bibliography/papers.bib`. Add `selected = {true}` to show a paper on the home page |
 | Teaching | `_teachings/*.md` |
-| Talks | `_talks/*.md`, listed by `_pages/talks.md` |
 | CV | `assets/pdf/hamed-damirchi-cv.pdf`. `data/HamedDamirchi-CV.pdf` is a copy that keeps the old URL working |
 | Blog posts | `_posts/YYYY-MM-DD-title.md` (none yet) |
 | Contact icons | `_data/socials.yml` |
@@ -24,7 +23,6 @@ Keep this list current. It's what to check when upgrading.
 
 - Removed the demo content, the bookshelf, repositories, people, plugins and news pages, and al-folio's own agent and CI files. Only `.github/workflows/deploy.yml` is kept.
 - Turned off the RenderCV/JSON Resume CV feature and Distill posts in `_config.yml` (`al_folio.features`). The CV page (`_pages/cv.md`) is a plain page that shows the PDF.
-- Added a `talks` collection (`_config.yml` `collections`, `_talks/`, `_pages/talks.md`).
 - `_includes/footer.liquid` overrides the gem's footer to show contact icons on every page.
 - `_pages/blog.md` shows "No posts yet." when there are no posts, and is last in the menu.
 - `enable_navbar_social: true`, publication badges off, and all authors shown (`max_author_limit` blank).

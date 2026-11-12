@@ -187,9 +187,6 @@ collections:
     output: true
   teachings:
     output: true
-  talks:
-    output: true
-    permalink: /talks/:path/
 
 markdown: kramdown
 highlighter: rouge
