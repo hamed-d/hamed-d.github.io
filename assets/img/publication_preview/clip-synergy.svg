@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="450" viewBox="0 0 700 450" role="img" aria-labelledby="title desc" font-family="Helvetica, Arial, sans-serif">
+  <title id="title">Adaptive ensembling of CLIP backbones</title>
+  <desc id="desc">Schematic. Each column is one test image and each row is a CLIP backbone (RN50, RN50x64, ViT-L-14). Filled circles mark correct predictions and rings mark wrong ones: different backbones are right on different images. Circle size is the weight predicted for that backbone on that image. The bottom row is the weighted ensemble, which is correct on more images than any single backbone.</desc>
+
+  <!-- Solid light background so the image reads on light and dark themes -->
+  <rect width="700" height="450" rx="14" fill="#F4F6F8"/>
+
+  <!-- Header labels -->
+  <g font-size="14" fill="#5B6573">
+    <text x="28" y="44">CLIP backbone</text>
+    <text x="160" y="44">Test images, one per column</text>
+  </g>
+
+  <!-- Row labels -->
+  <g font-size="20" font-weight="700" fill="#1F2933">
+    <text x="28" y="111">RN50</text>
+    <text x="28" y="188">RN50x64</text>
+    <text x="28" y="265">ViT-L-14</text>
+  </g>
+  <g font-size="20" font-weight="700" fill="#B84E00">
+    <text x="28" y="356">Adaptive</text>
+    <text x="28" y="379">ensemble</text>
+  </g>
+
+  <!-- One card per test image: backbones on top, ensemble result below -->
+  <g fill="#FFFFFF" stroke="#DDE2E8" stroke-width="1.5">
+    <rect x="160" y="62" width="76" height="238" rx="10"/>
+    <rect x="248" y="62" width="76" height="238" rx="10"/>
+    <rect x="336" y="62" width="76" height="238" rx="10"/>
+    <rect x="424" y="62" width="76" height="238" rx="10"/>
+    <rect x="512" y="62" width="76" height="238" rx="10"/>
+    <rect x="600" y="62" width="76" height="238" rx="10"/>
+  </g>
+  <g fill="#FBE9D9" stroke="#F1C9A5" stroke-width="1.5">
+    <rect x="160" y="322" width="76" height="76" rx="10"/>
+    <rect x="248" y="322" width="76" height="76" rx="10"/>
+    <rect x="336" y="322" width="76" height="76" rx="10"/>
+    <rect x="424" y="322" width="76" height="76" rx="10"/>
+    <rect x="512" y="322" width="76" height="76" rx="10"/>
+    <rect x="600" y="322" width="76" height="76" rx="10"/>
+  </g>
+
+  <!-- "Combine" markers between backbones and ensemble -->
+  <g fill="#8C96A3">
+    <path d="M191 305h14l-7 11z"/>
+    <path d="M279 305h14l-7 11z"/>
+    <path d="M367 305h14l-7 11z"/>
+    <path d="M455 305h14l-7 11z"/>
+    <path d="M543 305h14l-7 11z"/>
+    <path d="M631 305h14l-7 11z"/>
+  </g>
+
+  <!-- Backbone predictions. Filled = correct, ring = wrong. Radius = per-image weight. -->
+  <g fill="#0072B2">
+    <!-- image 1: every backbone correct -->
+    <circle cx="198" cy="104" r="20"/>
+    <circle cx="198" cy="181" r="21"/>
+    <circle cx="198" cy="258" r="22"/>
+    <!-- image 2 -->
+    <circle cx="286" cy="181" r="24"/>
+    <circle cx="286" cy="258" r="25"/>
+    <!-- image 3: only RN50 correct -->
+    <circle cx="374" cy="104" r="30"/>
+    <!-- image 4: only ViT-L-14 correct -->
+    <circle cx="462" cy="258" r="30"/>
+    <!-- image 5: only RN50x64 correct -->
+    <circle cx="550" cy="181" r="30"/>
+    <!-- image 6: RN50 correct but given little weight -->
+    <circle cx="638" cy="104" r="13"/>
+  </g>
+  <g fill="none" stroke="#7F8A98" stroke-width="3.5">
+    <circle cx="286" cy="104" r="11"/>
+    <circle cx="374" cy="181" r="11"/>
+    <circle cx="374" cy="258" r="13"/>
+    <circle cx="462" cy="104" r="10"/>
+    <circle cx="462" cy="181" r="13"/>
+    <circle cx="550" cy="104" r="12"/>
+    <circle cx="550" cy="258" r="11"/>
+    <circle cx="638" cy="181" r="22"/>
+    <circle cx="638" cy="258" r="25"/>
+  </g>
+
+  <!-- Ensemble predictions -->
+  <g fill="#D55E00">
+    <circle cx="198" cy="360" r="26"/>
+    <circle cx="286" cy="360" r="26"/>
+    <circle cx="374" cy="360" r="26"/>
+    <circle cx="462" cy="360" r="26"/>
+    <circle cx="550" cy="360" r="26"/>
+  </g>
+  <circle cx="638" cy="360" r="24.25" fill="none" stroke="#7F8A98" stroke-width="3.5"/>
+
+  <!-- Legend -->
+  <g font-size="14" fill="#4A5462">
+    <circle cx="167" cy="425" r="7" fill="#0072B2"/>
+    <text x="181" y="430">correct</text>
+    <circle cx="250" cy="425" r="6" fill="none" stroke="#7F8A98" stroke-width="2.5"/>
+    <text x="264" y="430">wrong</text>
+    <circle cx="328" cy="425" r="3.5" fill="#0072B2"/>
+    <circle cx="343" cy="425" r="8" fill="#0072B2"/>
+    <text x="358" y="430">size = weight predicted for that image</text>
+  </g>
+</svg>

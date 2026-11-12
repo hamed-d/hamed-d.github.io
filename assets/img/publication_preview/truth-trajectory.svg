@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="450" viewBox="0 0 700 450" role="img" aria-labelledby="tat-title tat-desc" font-family="Helvetica, Arial, sans-serif">
+  <title id="tat-title">Truth as a Trajectory: hidden-state trajectories across layers</title>
+  <desc id="tat-desc">Schematic of two hidden-state trajectories through activation space, one dot per layer. The trajectory of a correct answer moves in smooth, consistent steps; the trajectory of an incorrect answer makes sharp deviations. The method classifies the sequence of layer-to-layer displacements rather than the state at any single layer.</desc>
+
+  <defs>
+    <marker id="head-correct" markerUnits="userSpaceOnUse" markerWidth="30" markerHeight="28" refX="10" refY="14" orient="auto">
+      <path d="M0,0 L30,14 L0,28 Z" fill="#0072B2"/>
+    </marker>
+    <marker id="head-incorrect" markerUnits="userSpaceOnUse" markerWidth="30" markerHeight="28" refX="10" refY="14" orient="auto">
+      <path d="M0,0 L30,14 L0,28 Z" fill="#D55E00"/>
+    </marker>
+    <marker id="head-note" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto">
+      <path d="M0,0 L12,5 L0,10 Z" fill="#1F2937"/>
+    </marker>
+  </defs>
+
+  <!-- Solid light background so the image reads on both light and dark themes -->
+  <rect width="700" height="450" fill="#F7F8FA"/>
+  <rect x="0.5" y="0.5" width="699" height="449" fill="none" stroke="#DDE1E7"/>
+
+  <!-- Incorrect answer: same step size, but sharp changes of direction between layers -->
+  <polyline points="94,280 145,234 212,248 230,315 296,294 322,352 258,380 326,404 380,354 446,372 494.3,380.5" fill="none" stroke="#D55E00" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#head-incorrect)"/>
+  <g fill="#D55E00" stroke="#F7F8FA" stroke-width="3">
+    <circle cx="94" cy="280" r="11"/>
+    <circle cx="145" cy="234" r="11"/>
+    <circle cx="212" cy="248" r="11"/>
+    <circle cx="230" cy="315" r="11"/>
+    <circle cx="296" cy="294" r="11"/>
+    <circle cx="322" cy="352" r="11"/>
+    <circle cx="258" cy="380" r="11"/>
+    <circle cx="326" cy="404" r="11"/>
+    <circle cx="380" cy="354" r="11"/>
+    <circle cx="446" cy="372" r="11"/>
+  </g>
+
+  <!-- Correct answer: each layer's update turns only slightly from the last -->
+  <polyline points="84,232 135,186 189,146 248,112 311,87 378,75 446,80 509,105 561,149 591,210 591,258" fill="none" stroke="#0072B2" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#head-correct)"/>
+  <g fill="#0072B2" stroke="#F7F8FA" stroke-width="3">
+    <circle cx="84" cy="232" r="11"/>
+    <circle cx="135" cy="186" r="11"/>
+    <circle cx="189" cy="146" r="11"/>
+    <circle cx="248" cy="112" r="11"/>
+    <circle cx="311" cy="87" r="11"/>
+    <circle cx="378" cy="75" r="11"/>
+    <circle cx="446" cy="80" r="11"/>
+    <circle cx="509" cy="105" r="11"/>
+    <circle cx="561" cy="149" r="11"/>
+    <circle cx="591" cy="210" r="11"/>
+  </g>
+
+  <!-- What the method reads: the displacement from one layer to the next -->
+  <line x1="314.9" y1="108.7" x2="381.9" y2="96.7" stroke="#1F2937" stroke-width="2" marker-end="url(#head-note)"/>
+  <text x="370" y="164" text-anchor="middle" font-size="21" fill="#1F2937">&#916;h<tspan dy="6" font-size="14">&#8467;</tspan><tspan dy="-6"> = h</tspan><tspan dy="6" font-size="14">&#8467;+1</tspan><tspan dy="-6"> &#8722; h</tspan><tspan dy="6" font-size="14">&#8467;</tspan></text>
+  <text x="370" y="190" text-anchor="middle" font-size="15" fill="#5B6472">displacement between layers</text>
+
+  <!-- Labels -->
+  <text x="40" y="320" font-size="15" fill="#5B6472">first layer</text>
+  <text x="591" y="316" text-anchor="middle" font-size="26" font-weight="bold" fill="#1F2937">correct</text>
+  <text x="532" y="393" font-size="26" font-weight="bold" fill="#1F2937">incorrect</text>
+  <text x="40" y="428" font-size="14" fill="#5B6472">activation space (schematic)</text>
+</svg>
